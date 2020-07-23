@@ -11,6 +11,7 @@ variable "aws_iam_role_name" {
 variable "aws_iam_role_description" {
   description = "IAM role description"
   type        = string
+  default     = "Faros role"
 }
 
 variable "aws_iam_role_path" {
@@ -27,6 +28,7 @@ variable "aws_iam_policy_name" {
 variable "aws_iam_policy_description" {
   description = "IAM policy description"
   type        = string
+  default     = "Faros policy"
 }
 
 variable "aws_iam_policy_path" {
