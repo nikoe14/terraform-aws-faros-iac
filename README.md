@@ -1,6 +1,8 @@
 # faros-terraform module
 
 ## Example
+
+### main.tf
 ```
 module "sample_faros" {
   source = "git::https://github.com/nikoe14/terraform-aws-faros.git"
@@ -13,4 +15,9 @@ module "sample_faros" {
   aws_iam_role_description = "Faros role"
   aws_iam_policy_description = "Faros policy"
 }
+```
+
+### data.tf
+```
+data "aws_caller_identity" "current" {}
 ```
